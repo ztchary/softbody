@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>softbody editor</title>
+	<link rel="stylesheet" type="text/css" href="/style.css">
+</head>
+<body>
+	<canvas id="canvas"></canvas>
+	<label for="mass">Mass</label>
+	<input type="text" id="mass" value="1"><br>
+	<label for="stiff">Spring stiffness</label>
+	<input type="text" id="stiff" value="2"><br>
+	<label for="damp">Spring damping</label>
+	<input type="text" id="damp" value="5"><br>
+	<label for="mass">Color</label>
+	<input type="text" id="color" value="ffffff"><br>
+	<label for="perimeter">Perimeter</label>
+	<input type="checkbox" id="perimeter">
+	<input type="button" value="Reset" id="reset"><br>
+	<input type="text" id="filename" value="myobject">
+	<input type="button" value="Export" id="export"><br>
+	<a href="/sim">Back to simulation</a><br>
+	<p>I used to let people upload shapes but it was insecure so just <a href="mailto:zac@dogwater53.us">email me</a> if you want it in the simulator</p>
+	<script type="text/javascript" src="sketch.js"></script>
+	<script type="text/javascript" src="/utils.js"></script>
+</body>
+</html>

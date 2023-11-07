@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>softbody</title>
+	<link rel="stylesheet" type="text/css" href="/style.css">
+</head>
+<body>
+	<canvas id="canvas"></canvas>
+  <label for="x">Simulation substeps: <span id="subcount"></span></label>
+  <input type="range" min="1" max="50" value="1" id="sub" step="1"><br>
+  <label for="x">X-axis gravity</label>
+  <input type="range" min="-1000" max="1000" value="0" id="x" step="50"><br>
+  <label for="y">Y-axis gravity</label>
+  <input type="range" min="-1000" max="1000" value="-500" id="y" step="50"><br>
+  <label for="objname">Object name</label>
+  <select id="objname">
+  	<option value="cube">Cube</option>
+  	<option value="to">Tetris Block piece</option>
+  	<option value="ti">Tetris Line piece</option>
+  	<option value="ts">Tetris S piece</option>
+  	<option value="tz">Tetris Z piece</option>
+  	<option value="tt">Tetris T piece</option>
+  	<option value="tj">Tetris J piece</option>
+  	<option value="tl">Tetris L piece</option>
+  </select><br>
+  <label for="color">Object color (blank for default)</label>
+  <input type="text" value="" id="color"><br>
+  <input type="button" id="spawn" value="Spawn Object"><br>
+  <input type="button" id="reset" value="Reset Simulation"><br>
+	<input type="button" id="resetcache" value="Reset Cache"><br>
+	<a href="editor">Shape editor</a>
+	<script type="text/javascript" src="sim/vector.js"></script>
+	<script type="text/javascript" src="sim/particle.js"></script>
+	<script type="text/javascript" src="sim/spring.js"></script>
+	<script type="text/javascript" src="sim/object.js"></script>
+	<script type="text/javascript" src="sim/sketch.js"></script>
+	<script type="text/javascript" src="utils.js"></script>
+</body>
+</html>
